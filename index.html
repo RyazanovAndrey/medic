@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+    <title>Medlife</title>
+</head>
+<body>
+    
+    <header class="header" id="main">
+        <div class="container">
+            <div class="header__wrapper">
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li><a href="#home" class="header__link active">Головна</a></li>
+                        <li><a href="#special" class="header__link">Спеціалізації</a></li>
+                        <li><a href="#online" class="header__link">Записатись</a></li>
+                        <li><a href="#doctors" class="header__link">Лікарі</a></li>
+                        <li><a href="#about" class="header__link">Про нас</a></li>
+                        <li><a href="#answers" class="header__link">Запитання</a></li>
+                        <li><a href="#contacts" class="header__link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="header__info">
+                    <div class="header__info-tel">+38 (067) 999-99-99</div>
+                    <a href="#" class="header__link-call">замовити дзвінок</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <a href="#" class="btn-up"></a>
+
+    <section class="home" id="home">
+        <div class="container">
+
+            <div class="home__top">
+                <div class="home__col-left">
+                    <img src="./img/logo.png" alt="" class="home__logo">
+                    <div class="home__text">Інтегративний підхід до кожного пацієнта</div>
+                </div>
+                <div class="home__col-right">
+                    <div class="home__sub">пишіть нам, ми online</div>
+                    <div class="home__col-icon">
+                        <a href="" class="home__link"><img src="./img/viber.svg" alt=""></a>
+                        <a href="" class="home__link"><img src="./img/telegram.svg" alt=""></a>
+                        <a href="" class="home__link"><img src="./img/email.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home__row">
+                <div class="home__col">
+                    <div class="home__col-wrap">
+                        <h1 class="home__title">Ваш персональний лікар завжди з вами</h1>
+                        <p class="home__sub-text">Отримайте термінову медичну допомогу будь-якого профілю</p>
+                        <a href="#" class="home__btn btn">Записатися на прийом</a>
+                    </div>
+                </div>
+                <div class="home__col">
+                    <img src="./img/home-doctor.png" alt="">
+                </div>
+
+                <div class="home__bottom">
+                    <div class="home__bottom-card">
+                        <img src="./img/home-1.png" alt="">
+                        <div class="home__bottom-text">Великий вибір спеціалістів</div>
+                    </div>
+                    <div class="home__bottom-card">
+                        <img src="./img/home-2.png" alt="">
+                        <div class="home__bottom-text">Повний пакет обстежень</div>
+                    </div>
+                    <div class="home__bottom-card">
+                        <img src="./img/home-3.png" alt="">
+                        <div class="home__bottom-text">Перевірка стану хворого</div>
+                    </div>
+                    <div class="home__bottom-card">
+                        <img src="./img/home-4.png" alt="">
+                        <div class="home__bottom-text">Консультація 24/7</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-popup">
+                <div class="home-popup__body">
+                    <div class="home-popup__title">Записатися на прийом</div>
+                    <div class="home-popup__text">Залишіть ваші контактні дані і ми зв'яжемося з вами найближчим часом</div>
+                    <form>
+                        <input required type="text" class="home-popup__input" placeholder="Ваше ім’я">
+                        <input required type="text" class="home-popup__input" placeholder="+38 (000) 000 00 00">
+                        <button type="submit" class="home-popup__btn">Записатися на прийом</button>
+                        <div class="home-popup__check">
+                            <input type="checkbox" id="check" class="home-popup__check-true">
+                            <div class="home-popup__wrapper">
+                                <label for="check" class="home-popup__check-false">Згодний на обробку персональних даних відповідно до політики конфіденційності</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="special" id="special">
+            <div class="container">
+                <div class="special__title title">Спеціалізації</div>
+                <div class="special__cards">
+
+                    <div class="special__card">
+                        <img src="./img/special-1.png" alt="">
+                        <div class="special__block">
+                            <div class="special__block-title">Сімейна медицина</div>
+                            <div class="special__block-text">Терапевтичні прийоми. Підписання декларацій за програмою державних гарантій.</div>
+                        </div>
+                    </div>
+
+                    <div class="special__card">
+                        <img src="./img/special-2.png" alt="">
+                        <div class="special__block">
+                            <div class="special__block-title">Кардіологія</div>
+                            <div class="special__block-text">Зниження підвищеного тиску. Лікування хворих із серцево-судинними захворюваннями.</div>
+                        </div>
+                    </div>
+
+                    <div class="special__card">
+                        <img src="./img/special-3.png" alt="">
+                        <div class="special__block">
+                            <div class="special__block-title">Отоларингологія</div>
+                            <div class="special__block-text">Лікування захворювань «вуха, горла та носа». Амбулаторні процедури та стаціонарні операції.</div>
+                        </div>
+                    </div>
+
+                    <div class="special__card">
+                        <img src="./img/special-4.png" alt="">
+                        <div class="special__block">
+                            <div class="special__block-title">Дерматологія</div>
+                            <div class="special__block-text">Лікування шкірних захворювань. Звільнення від псоріазу, висипу вугрів і різного роду дерматитів.</div>
+                        </div>
+                    </div>
+
+                    <div class="special__card">
+                        <img src="./img/special-5.png" alt="">
+                        <div class="special__block">
+                            <div class="special__block-title">Урологія</div>
+                            <div class="special__block-text">Консервативне лікування захворювань сечостатевої системи, простатиту, чоловічої безплідності.</div>
+                        </div>
+                    </div>
+
+                    <div class="special__card">
+                        <img src="./img/special-6.png" alt="">
+                        <div class="special__block">
+                            <div class="special__block-title">Гастроентерологія</div>
+                            <div class="special__block-text">Лікування виразкових хвороб, гастритів, колітів, хвороб жовчного міхура та підшлункової залози.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="online" id="online">
+            <div class="container">
+                <div class="online__block">
+                    <div class="online__block-title">Записатися на консультацію</div>
+                    <div class="online__block-text">Залишіть ваші контактні дані і ми зв'яжемося з вами найближчим часом</div>
+                </div>
+                <form class="online-form">
+                    <input type="text" class="online-form__field" placeholder="Ваше ім’я">
+                    <input type="text" class="online-form__field" placeholder="+38 (000) 000 00 00">
+                    <button type="submit" class="online-form__brn btn">Записатися на прийом</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="doctors" id="doctors">
+            <div class="container">
+                <div class="doctors__title title">Фахівці нашого центру</div>
+
+                <!-- <div class="doctors__card">
+                    <img src="./img/doctor-1.jpg" alt="" class="doctors__img">
+                    <div class="doctors__info">
+                        <div class="doctors__info-name">Зуєвський Артем</div>
+                        <div class="doctors__info-job">Лікар терапевт</div>
+                    </div>
+                    <div class="doctors__work">
+                        <img src="./img/bag.png" alt="">
+                        <div class="doctors__work-wrapper">
+                            <div class="doctors__work-years">Стаж роботи</div>
+                            <div class="doctors__work-number">5 років</div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="doctors-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="doctors-slider swiper-slide">
+                            <div class="doctors__card">
+                                <img src="./img/doctor-1.jpg" alt="" class="doctors__img">
+                                <div class="doctors__info">
+                                    <div class="doctors__info-name">Зуєвський Артем</div>
+                                    <div class="doctors__info-job">Лікар терапевт</div>
+                                </div>
+                                <div class="doctors__work">
+                                    <img src="./img/bag.png" alt="">
+                                    <div class="doctors__work-wrapper">
+                                        <div class="doctors__work-years">Стаж роботи</div>
+                                        <div class="doctors__work-number">5 років</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctors-slider swiper-slide">
+                            <div class="doctors__card">
+                                <img src="./img/doctor-2.jpg" alt="" class="doctors__img">
+                                <div class="doctors__info">
+                                    <div class="doctors__info-name">Зуєвський Артем</div>
+                                    <div class="doctors__info-job">Лікар терапевт</div>
+                                </div>
+                                <div class="doctors__work">
+                                    <img src="./img/bag.png" alt="">
+                                    <div class="doctors__work-wrapper">
+                                        <div class="doctors__work-years">Стаж роботи</div>
+                                        <div class="doctors__work-number">5 років</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctors-slider swiper-slide">
+                            <div class="doctors__card">
+                                <img src="./img/doctor-3.jpg" alt="" class="doctors__img">
+                                <div class="doctors__info">
+                                    <div class="doctors__info-name">Зуєвський Артем</div>
+                                    <div class="doctors__info-job">Лікар терапевт</div>
+                                </div>
+                                <div class="doctors__work">
+                                    <img src="./img/bag.png" alt="">
+                                    <div class="doctors__work-wrapper">
+                                        <div class="doctors__work-years">Стаж роботи</div>
+                                        <div class="doctors__work-number">5 років</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctors-slider swiper-slide">
+                            <div class="doctors__card">
+                                <img src="./img/doctor-4.jpg" alt="" class="doctors__img">
+                                <div class="doctors__info">
+                                    <div class="doctors__info-name">Зуєвський Артем</div>
+                                    <div class="doctors__info-job">Лікар терапевт</div>
+                                </div>
+                                <div class="doctors__work">
+                                    <img src="./img/bag.png" alt="">
+                                    <div class="doctors__work-wrapper">
+                                        <div class="doctors__work-years">Стаж роботи</div>
+                                        <div class="doctors__work-number">5 років</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctors-slider swiper-slide">
+                            <div class="doctors__card">
+                                <img src="./img/doctor-1.jpg" alt="" class="doctors__img">
+                                <div class="doctors__info">
+                                    <div class="doctors__info-name">Зуєвський Артем</div>
+                                    <div class="doctors__info-job">Лікар терапевт</div>
+                                </div>
+                                <div class="doctors__work">
+                                    <img src="./img/bag.png" alt="">
+                                    <div class="doctors__work-wrapper">
+                                        <div class="doctors__work-years">Стаж роботи</div>
+                                        <div class="doctors__work-number">5 років</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctors-slider swiper-slide">
+                            <div class="doctors__card">
+                                <img src="./img/doctor-1.jpg" alt="" class="doctors__img">
+                                <div class="doctors__info">
+                                    <div class="doctors__info-name">Зуєвський Артем</div>
+                                    <div class="doctors__info-job">Лікар терапевт</div>
+                                </div>
+                                <div class="doctors__work">
+                                    <img src="./img/bag.png" alt="">
+                                    <div class="doctors__work-wrapper">
+                                        <div class="doctors__work-years">Стаж роботи</div>
+                                        <div class="doctors__work-number">5 років</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctors-slider swiper-slide">
+                            <div class="doctors__card">
+                                <img src="./img/doctor-1.jpg" alt="" class="doctors__img">
+                                <div class="doctors__info">
+                                    <div class="doctors__info-name">Зуєвський Артем</div>
+                                    <div class="doctors__info-job">Лікар терапевт</div>
+                                </div>
+                                <div class="doctors__work">
+                                    <img src="./img/bag.png" alt="">
+                                    <div class="doctors__work-wrapper">
+                                        <div class="doctors__work-years">Стаж роботи</div>
+                                        <div class="doctors__work-number">5 років</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="doctors-slider swiper-slide">
+                            <div class="doctors__card">
+                                <img src="./img/doctor-1.jpg" alt="" class="doctors__img">
+                                <div class="doctors__info">
+                                    <div class="doctors__info-name">Зуєвський Артем</div>
+                                    <div class="doctors__info-job">Лікар терапевт</div>
+                                </div>
+                                <div class="doctors__work">
+                                    <img src="./img/bag.png" alt="">
+                                    <div class="doctors__work-wrapper">
+                                        <div class="doctors__work-years">Стаж роботи</div>
+                                        <div class="doctors__work-number">5 років</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                
+                    <div class="doctors-slider__arrows">
+                        <div class="doctors-slider__arrows-img swiper-button-prev"></div>
+                        <div class="doctors-slider__arrows-img swiper-button-next"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <div class="about__left">
+                        <div class="about__left-title title">Про нас</div>
+                        <div class="about__left-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto molestias rem impedit inventore aspernatur. Totam, delectus ipsa accusamus exercitationem animi, soluta molestiae consequuntur harum alias nisi reprehenderit suscipit doloremque aut perspiciatis nihil libero consectetur odit neque ipsam numquam quos cum. Nobis quia ut nam aspernatur incidunt assumenda libero corporis perspiciatis!</div>
+                    </div>
+                    <img src="./img/about-img.jpg" alt="" class="about__img">
+                </div>
+            </div>
+        </section>
+
+        <section class="answers" id="answers">
+            <div class="container">
+                <div class="answers__title title">Відповіді на запитання</div>
+                <div class="answers__wrapper">
+                    <div class="answers__box">
+                        <div class="answers__head">Як записатись на прийом?</div>
+                        <div class="answers__text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatibus dolorem fuga libero commodi sed praesentium reprehenderit vitae, nulla provident assumenda omnis et voluptatum quasi repellendus rerum dignissimos odio facere voluptas aperiam quos voluptatem harum. Atque exercitationem placeat facere qui voluptatibus laudantium minus earum fugiat debitis a. Est, exercitationem nulla!</p></div>
+                    </div>
+                    <div class="answers__box">
+                        <div class="answers__head">Чи маю я оплачувати прийом заздалегідь?</div>
+                        <div class="answers__text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatibus dolorem fuga libero commodi sed praesentium reprehenderit vitae, nulla provident assumenda omnis et voluptatum quasi repellendus rerum dignissimos odio facere voluptas aperiam quos voluptatem harum. Atque exercitationem placeat facere qui voluptatibus laudantium minus earum fugiat debitis a. Est, exercitationem nulla!</p></div>
+                    </div>
+                    <div class="answers__box">
+                        <div class="answers__head">Як відбувається лікування?</div>
+                        <div class="answers__text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatibus dolorem fuga libero commodi sed praesentium reprehenderit vitae, nulla provident assumenda omnis et voluptatum quasi repellendus rerum dignissimos odio facere voluptas aperiam quos voluptatem harum. Atque exercitationem placeat facere qui voluptatibus laudantium minus earum fugiat debitis a. Est, exercitationem nulla!</p></div>
+                    </div>
+                    <div class="answers__box">
+                        <div class="answers__head">Чи можна провести детоксикацію вдома?</div>
+                        <div class="answers__text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatibus dolorem fuga libero commodi sed praesentium reprehenderit vitae, nulla provident assumenda omnis et voluptatum quasi repellendus rerum dignissimos odio facere voluptas aperiam quos voluptatem harum. Atque exercitationem placeat facere qui voluptatibus laudantium minus earum fugiat debitis a. Est, exercitationem nulla!</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="contacts__wrapper">
+                    <div class="contacts__col">
+                        <div class="contacts__title title">Наші контакти</div>
+                        <div class="contacts__row">
+                            <img src="img/ico-info1.svg" alt="">
+                            <div class="contacts__row-right">
+                                <h4>Наша адреса</h4>
+                                <p>м. Запоріжжя, вул. Спартака Маковського, 13</p>
+                            </div>
+                        </div>
+                        <div class="contacts__row">
+                            <img src="img/ico-info2.svg" alt="">
+                            <div class="contacts__row-right">
+                                <h4>Наша адреса</h4>
+                                <p>м. Запоріжжя, вул. Спартака Маковського, 13</p>
+                            </div>
+                        </div>
+                        <div class="contacts__row">
+                            <img src="img/ico-info3.svg" alt="">
+                            <div class="contacts__row-right">
+                                <h4>Час роботи</h4>
+                                <p>Щоденно, з 09.00 до 18.00</p>
+                            </div>
+                        </div>
+                        <div class="contacts__row">
+                            <img src="img/ico-info4.svg" alt="">
+                            <div class="contacts__row-right">
+                                <h4>Електронна пошта</h4>
+                                <p>medlife.gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__col">
+                        <img src="img/map.jpg" alt="" class="contacts__map">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <img src="img/logo-footer.svg" alt="">
+                <ul class="footer__menu">
+                    <li><a href="" class="footer__link">Про нас</a></li>
+                    <li><a href="" class="footer__link">Спеціалізації</a></li>
+                    <li><a href="" class="footer__link">Лікарі</a></li>
+                    <li><a href="" class="footer__link">Запитання</a></li>
+                    <li><a href="" class="footer__link">Контакти</a></li>
+                </ul>
+                <div class="footer__tel">+38 (067) 999-99-99 </div>
+                <div>
+                    <img src="../../img/facebook-footer.svg" alt="">
+                    <img src="../../img/instagram-footer.svg" alt="">
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

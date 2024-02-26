@@ -1,0 +1,34 @@
+.special {
+
+    padding-block: 100px;
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        background-color: $color-grey;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    &__block-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    &__block-text {
+        font-size: 13px;
+        color: #A8A2A2;
+    }
+}

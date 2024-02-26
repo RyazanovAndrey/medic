@@ -1,0 +1,119 @@
+.home-popup {
+
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+    &__body {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        background-color: $color-grey;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 35px;
+        max-width: 390px;
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+
+    }
+
+    &__text {
+        margin-block: 20px;
+    }
+
+    &__input {
+        border: 1px solid $color-blue;
+        height: 50px;
+        width: 100%;
+        padding-left: 10px;
+        border-radius: 10px;
+
+        &::placeholder{
+            font-size: 16px;
+            color: rgb(202, 198, 198);
+        }
+    }
+
+    &__input:nth-child(2){
+        margin-top: 20px;
+    }
+
+    &__btn{
+        background-color: $color-blue;
+        width: 100%;
+        border-radius: 10px;
+        color: #fff;
+        padding-block: 20px;
+        margin-top: 20px;
+
+        &:hover{
+            background-color: #4b6cc5;
+        }
+    }
+
+    &__wrapper{
+        margin-left: 20px;
+    }
+
+    &__check {
+
+        position: relative;
+        margin-top: 20px;
+        display: flex;
+
+        &-true{
+            opacity: 0;
+        }
+
+        &-false{
+            color: #CCC5C5;
+
+            &::before{
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+                width: 26px;
+                height: 26px;
+                display: block;
+                border-radius: 5px;
+                background-color: $color-blue;
+            }
+
+            &::after{
+                position: absolute;
+                top: 9px;
+                left: 5px;
+                content: '';
+                background-image: url(../img/check-arrow.svg);
+                width: 16px;
+                height: 10px;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.home-popup__check-true:checked + .home-popup__wrapper .home-popup__check-false::after{
+    opacity: 1;
+}
+
+.home-popup.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.stop-scroll{
+    overflow: hidden;
+}

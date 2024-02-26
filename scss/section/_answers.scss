@@ -1,0 +1,48 @@
+.answers {
+
+    padding-block: 100px;
+    background-color: aliceblue;
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__head{
+        position: relative;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        cursor: pointer;
+
+        &::after{
+            position: absolute;
+            content: '';
+            background: url(../img/ans-arrow.svg);
+            width: 30px;
+            height: 30px;
+            top: calc(50% - 15px);
+            right: 10px;
+            transition: .3s;
+        }
+
+    }
+
+    &__text {
+        background-color: #fff;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+        color: #b9b9b9;
+
+        p {
+            padding: 20px;
+        }
+    }
+}
+
+.answers__box.open .answers__head::after{
+    rotate: 180deg;
+}

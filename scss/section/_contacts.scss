@@ -1,0 +1,41 @@
+.contacts {
+
+    padding-block: 100px;
+    background: $color-liner;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__col {
+        flex: 1 1 50%;
+    }
+
+    &__title {
+        margin-bottom: 70px;
+    }
+
+    &__row {
+        display: flex;
+        gap: 25px;
+        margin-bottom: 30px;
+        align-items: flex-start;
+    }
+
+    &__row-right {
+
+        & h4{
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        & p{
+            font-size: 15px;
+        }
+    }
+
+    &__map{
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,90 @@
+.home {
+
+    background-image: $color-liner;
+    padding-top: 80px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    &__col-left {
+        display: flex;
+    }
+
+    &__col-right{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 600;
+        gap: 20px;
+    }
+
+    &__logo {
+    }
+
+    &__text {
+        margin-left: 25px;
+        font-size: 15px;
+        font-weight: 400;
+        width: 180px;
+    }
+
+    &__sub {
+    }
+
+    &__col-icon {
+    }
+
+    &__link {
+    }
+
+    &__row {
+        display: flex;position: relative;
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        color: $color-blue;
+    }
+
+    &__sub-text {
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 370px;
+        margin-block: 30px;
+    }
+    
+    &__bottom {
+        position: absolute;
+        bottom: 45px;
+        left: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    &__bottom-card {
+        background-color: $color-grey;
+        border-radius: 10px;
+        padding: 20px 40px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    &__bottom-text {
+    }
+
+    &__col-wrap{
+        margin-top: 145px;
+        max-width: 470px;
+    }
+
+}
+

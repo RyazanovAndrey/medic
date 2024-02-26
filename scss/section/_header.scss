@@ -1,0 +1,50 @@
+.header {
+
+    padding-block: 15px;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+    transition: .4s;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        gap: 60px;
+    }
+
+    &__link {
+        font-size: 14px;
+        color: black;
+        transition: .3s;
+
+        &:hover{
+            color: red;
+        }
+
+        &.active{
+            color: red;
+        }
+    }
+
+    &__info {
+        text-align: center;
+        color: $color-blue;
+    }
+
+    &__info-tel {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__link-call {
+        font-size: 15px;
+        font-weight: 500;
+        border-bottom: 1px solid $color-blue;
+    }
+}

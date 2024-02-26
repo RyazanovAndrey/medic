@@ -1,0 +1,25 @@
+.about {
+
+    padding-block: 100px;
+    background-image: $color-liner;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 80px;
+    }
+
+    &__left-title {
+        margin-bottom: 60px;
+    }
+
+    &__left-text {
+        font-size: 16px;
+        color: #A8A2A2;
+    }
+
+    &__img{
+        border-radius: 20px;
+    }
+}

@@ -1,0 +1,26 @@
+.footer {
+    padding-block: 35px;
+    background-color: $color-blue;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu{
+        display: flex;
+        gap: 15px;
+    }
+
+    &__link{
+        color: #fff;
+    }
+
+    &__tel{
+        font-size: 25px;
+        color: #fff;
+        font-weight: 700;
+    }
+}
+

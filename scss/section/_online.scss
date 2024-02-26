@@ -1,0 +1,37 @@
+.online {
+
+    background-image: url(../img/online-fone.jpg);
+    object-fit: cover;
+    padding-block: 50px;
+
+    &__block {
+        margin-bottom: 50px;
+    }
+
+    &__block-title {
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: $color-grey;
+    }
+
+    &__block-text {
+        font-size: 16px;
+        font-weight: 400;
+        color: $color-grey;
+    }
+}
+
+.online-form {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+
+    &__field {
+        height: 60px;
+        background-color: $color-grey;
+        text-align: center;
+        border-radius: 10px;
+    }
+}

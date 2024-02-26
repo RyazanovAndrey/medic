@@ -1,0 +1,82 @@
+@import './reset', './vars', './fonts';
+@import './section/header', './section/home', './section/popup', 
+        './section/special', './section/online', './section/doctors', 
+        './section/about', './section/answers', './section/contacts', './section/footer';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'OpenSans';
+    --sb-track-color: #fff;
+    --sb-thumb-color: #2C4587;
+    --sb-size: 10px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 0;
+}
+
+.container{
+    max-width: $desktop;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: 700;
+    color: $color-blue;
+}
+
+
+.active{
+    padding-block: 5px;
+}
+
+.btn{
+    display: block;
+    padding: 20px 30px;
+    background-color: $color-blue;
+    color: #fff;
+    border-radius: 10px;
+    width: 270px;
+    transition: .2s;
+
+    &:hover{
+        background-color: #4b6cc5;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+.btn-up{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-image: url(../img/btn-up.svg);
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+    &.show{
+        opacity: 1;
+        visibility: visible;
+    }
+}

@@ -1,0 +1,90 @@
+.doctors {
+
+    padding-block: 100px;
+    background-color: $color-grey;
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__card {
+        width: 270px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
+        border-radius: 10px;
+    }
+
+    &__img {
+        border-radius: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__info {
+        text-align: center;
+    }
+
+    &__info-name {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &__info-job {
+        font-size: 15px;
+        color: $color-blue;
+    }
+
+    &__work {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    &__work-wrapper {
+        text-align: right;
+    }
+
+    &__work-years {
+        font-size: 15px;
+    }
+
+    &__work-number {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.doctors-slider{
+    position: relative;
+}
+
+.doctors-slider .swiper-wrapper{
+    display: inline-flex;
+}
+
+.doctors-slider.swiper{
+    overflow: hidden;
+}
+
+.doctors-slider__arrows{
+    position: absolute;
+    top: calc(50% - 20px);
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.doctors-slider__arrows-img{
+    background-image: url(../img/arrow.svg);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.doctors-slider__arrows-img:nth-child(2){
+    rotate: 180deg;
+}
+
