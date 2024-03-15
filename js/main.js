@@ -1,23 +1,41 @@
-// Скрипт для верхнего меню, кнопка вверх
+// Активная кнопка меню + кнопка вверх + уменьшение меню
 
-const headerLine = document.querySelector('.header')
-const btnUp = document.querySelector('.btn-up')
+window.addEventListener('scroll', () => {
+    const currentY = window.scrollY
 
-document.addEventListener('scroll', () => {
-    let x = window.scrollY
-
-    if(x > 100){
-        headerLine.classList.add('active')
-    }else{
-        headerLine.classList.remove('active')
-    }
-
-    if(x > 1500){
-        btnUp.classList.add('show')
-    }else{
-        btnUp.classList.remove('show')
-    }
+    headerSHow(currentY)
+    activeLink(currentY)
+    topBtn(currentY)
 })
+
+
+function headerSHow(currentY){
+
+    const header = document.querySelector('.header')
+
+    if(currentY > header.offsetHeight + 150){
+        header.style.paddingBlock = '10px'
+    }else{
+        header.style.paddingBlock = '15px'
+    }
+}
+
+function activeLink(currentY){
+    document.querySelectorAll('section').forEach(item => {
+        if(currentY >= item.offsetTop){
+            document.querySelector('.act-link').classList.remove('act-link')
+            document.querySelector(`a[href="#${item.id}"]`).classList.add('act-link')
+        }
+    })
+}
+
+function topBtn(currentY){
+    if(currentY >= document.documentElement.clientHeight + 1000){
+        document.querySelector('.btn-up').classList.add('show-btn')
+    }else{
+        document.querySelector('.btn-up').classList.remove('show-btn')
+    }
+}
 
 // Скрипт для pop-up окна
 
@@ -26,8 +44,6 @@ const homePopup = document.querySelector('.home-popup')
 const stopScroll = document.body
 
 let scrollRight = window.innerWidth - stopScroll.offsetWidth + 'px'
-
-console.log(scrollRight);
 
 homeBtn.addEventListener('click', () => {
     addScroll()
@@ -77,22 +93,7 @@ answersHead.forEach(item => {
     })
 })
 
-// Активная ссылка при прокрутке
 
-const sectAct = document.querySelectorAll('section')
-const links = document.querySelectorAll('.header__link')
-
-window.addEventListener('scroll', () => {
-    sectAct.forEach(item => {
-        const curScroll = window.scrollY
-        const curId = item.getAttribute('id')
-
-        if(curScroll >= item.offsetTop){
-            links.forEach(link => link.classList.remove('active'))
-            document.querySelector('[href*=' + curId +']').classList.add('active')
-        }
-    })
-})
 
 // Скрипт Swiper Slider
 

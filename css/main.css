@@ -140,7 +140,7 @@ legend {
 .header__link:hover {
   color: red;
 }
-.header__link.active {
+.header__link.act-link {
   color: red;
 }
 .header__info {
@@ -655,7 +655,7 @@ body::-webkit-scrollbar-thumb {
   visibility: hidden;
   transition: 0.3s;
 }
-.btn-up.show {
+.btn-up.show-btn {
   opacity: 1;
   visibility: visible;
 }/*# sourceMappingURL=main.css.map */
