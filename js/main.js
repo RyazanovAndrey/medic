@@ -74,7 +74,7 @@ function removeScroll (){
     stopScroll.classList.remove('stop-scroll')
 }
 
-// Accordion
+// Accordion menu
 
 const answersHead = document.querySelectorAll('.answers__head')
 
